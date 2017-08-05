@@ -3,18 +3,18 @@ console.log('jquery works');
 
 //var a= $('#valueOne').val()
 //var b= $('#valueTwo').val()
-    $('#subtraction').on('click',function(){
+    $('#buttons').on('click',function(){
         var a= $('#valueOne').val()
         var b= $('#valueTwo').val()
         //console.log()
         //var sum = a-b;
        
-        console.log(sum)
+        console.log('button pushed')
 
 $.ajax({
            method:'POST',
            //the '/' url has to match the app.post on app.js file
-           url:'/',
+           url:'/codeChallenge',
            //data has to be an object
            data:{
                valueA: a,
