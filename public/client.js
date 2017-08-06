@@ -8,11 +8,13 @@ console.log('jquery works');
         var a= $('#valueOne').val()
         var b= $('#valueTwo').val()
         var operation = $(this).attr('id')
+        console.log(operation);
         var createdObject = {
             inputValueOne:a,
             inputValueTwo:b,
             type: operation,
  }
+        console.log(createdObject)
 .ajax({
     method: "POST",
     url:'/codeChallenge',
