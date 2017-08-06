@@ -15,7 +15,7 @@ console.log('jquery works');
             type: operation,
  }
         console.log(createdObject)
-.ajax({
+$.ajax({
     method: "POST",
     url:'/codeChallenge',
     data: createdObject,
