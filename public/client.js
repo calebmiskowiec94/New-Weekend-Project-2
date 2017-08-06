@@ -1,6 +1,6 @@
 $(document).ready(function(){
 console.log('jquery works');
-ajaxGet();
+//ajaxGet();
 //var a= $('#valueOne').val()
 //var b= $('#valueTwo').val()
     $('.mathButtons').on('click',function(){
@@ -36,14 +36,17 @@ $.ajax({
 
 function ajaxGet(){
     $.ajax({
-        method:"GET",
-        url:"/codeChallenge",
+        method: 'GET',
+        url:'/codeChallenge',
         success:function(response){
             $('#answer').append('<p>'+response+'</p>');
+           //response = response[0];
+           displayResult(response);
         }
     })
 }
 
-
-
-
+function displayResult(result){
+    $('#answer').empty();
+    $('#answer').html(result);
+};
