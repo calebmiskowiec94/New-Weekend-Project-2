@@ -18,14 +18,10 @@ console.log('jquery works');
 .ajax({
     method: "POST",
     url:'/codeChallenge',
-    data:{
-        inputValueOne:a,
-        inputValueTwo:b,
-        type: "ADD",
-    },
-    success: '',
-
-})
+    data: createdObject,
+    success: function (response){
+        console.log(response);
+}})
            
 
 
