@@ -7,8 +7,12 @@ console.log('jquery works');
         console.log('buttons been clicked')
         var a= $('#valueOne').val()
         var b= $('#valueTwo').val()
-       
-        console.log('button pushed')
+        var operation = $(this).attr('id')
+        var createdObject = {
+            inputValueOne:a,
+            inputValueTwo:b,
+            type: operation,
+ }
 .ajax({
     method: "POST",
     url:'/codeChallenge',
