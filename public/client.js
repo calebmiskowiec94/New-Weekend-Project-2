@@ -5,13 +5,13 @@ console.log('jquery works');
 //var b= $('#valueTwo').val()
     $('.mathButtons').on('click',function(){
         console.log('buttons been clicked')
-        var a= $('#valueOne').val()
-        var b= $('#valueTwo').val()
+        var apple = $('#valueOne').val()
+        var banana = $('#valueTwo').val()
         var operation = $(this).attr('id')
         console.log(operation);
         var createdObject = {
-            inputValueOne:a,
-            inputValueTwo:b,
+            inputValueOne: apple,
+            inputValueTwo: banana,
             type: operation,
  }
         console.log(createdObject)
