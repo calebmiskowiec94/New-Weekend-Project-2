@@ -23,7 +23,7 @@ function calculate(typeOne, typeTwo, opp){
         dom = [+typeOne / +typeTwo];
     }
     console.log(dom)
-    return dom;
+    //return dom;
 }
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));

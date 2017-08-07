@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //ajaxGet();
 console.log('jquery works');
 //ajaxGet();
 //var a= $('#valueOne').val()
